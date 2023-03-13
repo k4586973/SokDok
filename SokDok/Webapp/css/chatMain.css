@@ -1,0 +1,169 @@
+*{
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+body {
+	background-color: #159BA1;
+}
+
+.Maincontainer{
+	width: 80%;
+	max-width: 942px;
+	min-width: 942px;
+	height: 700px;
+	background-color: #70F5FB;
+	display: grid;
+	grid-tmeplate-rows: repeat(10, minmax(100px, auto));
+	grig-tmeplate-columns: repear(10, 1fr);
+	
+	grid-template-areas:
+		". . . Chat-Title Chat-Title Chat-Title Chat-Title Chat-Title . logout"
+		"MemInfo MemInfo MemInfo Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner"
+		"MemInfo MemInfo MemInfo Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner"
+		"MemInfo MemInfo MemInfo Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner"
+		"MemInfo MemInfo MemInfo Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner"
+		"MemInfo MemInfo MemInfo Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner"
+		"MemInfo MemInfo MemInfo Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner"
+		"MemInfo MemInfo MemInfo Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner"
+		"RoomInfo RoomInfo RoomInfo Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner"
+		"RoomInfo RoomInfo RoomInfo Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner Chat-contatiner"
+		"RoomInfo RoomInfo RoomInfo NickName W-Chat input-Chat input-Chat input-Chat input-Chat input-Chat";
+		
+	row-gap : 10px;
+	column-gap : 10px;
+	
+	border: 2px solid #00A4AC;
+	border-radius: 5px;
+	
+	padding: 5px;
+	
+}
+
+.Chat-Title{ grid-area : Chat-Title;
+			background-color: #B4EAEC;
+			border: 2px solid #159BA1;
+			border-radius: 5px;
+}
+
+.MemInfo { grid-area : MemInfo;
+			background-color: #B4EAEC;
+			min-width : 180px;
+			max-width : 180px;
+			border: 2px solid #159BA1;
+			border-radius: 5px;
+
+			padding: 5px;
+}
+
+.RoomInfo { grid-area : RoomInfo;
+			background-color: #B4EAEC;
+			
+			border: 2px solid #159BA1;
+			border-radius: 5px;
+			
+			padding: 5px;
+			min-width : 180px;
+			max-width : 180px;
+}
+
+.Chat-container { grid-area : Chat-contatiner; 
+					background-color: #B4EAEC;
+					
+					border: 2px solid #159BA1;
+					border-radius: 5px;
+					padding: 5px;
+					
+					max-height: 600px;
+					overflow: scroll;
+					overflow-x: hidden;
+}
+
+.W-Chat {
+	grid-area : W-Chat;
+	vertical-align: middle;
+}
+
+#NickName {
+	grid-area : NickName;
+	text-align: center;
+	vertical-align: middle;
+	min-width: 88px;
+	max-width: 88px;
+	overflow: auto;
+}
+
+.inputBox {
+	grid-area : input-Chat;
+	vertical-align: middle;
+}
+
+#logout{
+	grid-area : logout;
+}
+
+#MemCnt {
+	background-color: #0099A0;
+	width: 80%%;
+	font-size: 20px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	padding: 0px;
+}
+
+#Members {
+	background-color: #66F1F7;
+	width: 80%;
+	
+	border: 2px solid #0099A0;
+	border-radius: 5px;
+	margin-bottom: 2px;
+}
+
+.ServerChat {
+	background-color: #FFFFFF;
+	display: block;
+	border: 3px solid #c0c0c0;
+	border-radius: 5px;
+	margin-bottom: 2px;
+	font-size: 18px;
+	font-style: #FFFFFF;
+}
+
+.UserChat {
+	margin-bottom: 2px;
+	display: block;
+}
+
+#Chat{
+	max-width: 60%;
+	background-color: #B6FEAE;
+	border: 3px solid #0B7300;
+	border-radius: 5px;
+	padding: 5px;
+	display: inline-block;
+}
+
+#Others {
+	text-align: left;
+}
+
+#My{
+	text-align: right;
+}
+
+#input-Chat{
+	width: 80%;
+	height: 30px;
+}
+
+#wmember{
+	height: 35px;
+	width: 100px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.chatTime{
+	font-size: 10px;
+}
